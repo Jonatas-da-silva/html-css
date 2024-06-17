@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu responsívo</title>
+    <link rel="stylesheet" href="estilos/style.css" >
+    <link rel="stylesheet" href="estilos/media.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu primeiro site</h1>
+        <i id="icon" class="material-icons" onclick="clickMenu()">menu</i>
+        <nav id="item">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Testanto Media queries</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora voluptatum iure? Laudantium asperiores unde distinctio, recusandae odit suscipit illum magnam aut eos quo commodi aperiam non quam veniam! Pariatur.
+                Impedit, et omnis maxime ipsa delectus blanditiis asperiores debitis atque quisquam ipsum ad cumque harum commodi distinctio id eos doloremque laborum dolorum quos repellendus similique neque enim a iusto. Odit.
+                Perspiciatis officia voluptas quasi, eum veritatis reprehenderit at fugit dolorem eos atque reiciendis consequuntur consectetur facere ab laudantium praesentium excepturi ex culpa qui quam ipsa possimus blanditiis. Impedit, ad officiis.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos optio, laboriosam corporis dolore ad voluptatem possimus distinctio cupiditate quidem culpa non, modi a magnam quaerat facilis enim atque quod sunt! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas deserunt officia quis molestiae recusandae fugit sit blanditiis labore. Omnis, culpa? Amet officiis repudiandae accusamus tempora ipsum, illo saepe id eligendi.
+            </p>
+
+        </article>
+    </main>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                item.style.display = 'block'
+            } else {
+                item.style.display = 'none'
+            }
+        }
+        function clickMenu(){
+            if(item.style.display =='block'){
+                item.style.display = 'none'
+
+            }else{
+                item.style.display = 'block'
+            }
+           
+        }
+    </script>
+    
+</body>
+</html>

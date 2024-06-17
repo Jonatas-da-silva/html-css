@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@media screen and (min-width: 768px){
+    i#icon{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+    nav>ul>li{
+        display: inline-block;
+    }
+    nav a{
+        border-radius: 0px 10px;
+    }
+    nav a:hover{
+        transition: 0.6s;
+        padding: 5px;
+    }
+    main{
+        width: 768px;
+    }
+}
